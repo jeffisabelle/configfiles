@@ -1,0 +1,32 @@
+alias shank2="primusrun /home/jeffisabelle/games/Shank\ 2/bin/shank2-bin64"
+alias hon="primusrun /home/jeffisabelle/HoN/hon.sh"
+
+# alias for emacs
+alias ec="emacsclient -t"
+alias ecc="emacsclient -c &"
+
+# hosting & vps
+alias hosting="ssh -p 2222 korsanay@184.173.206.97"
+alias vps="ssh root@192.34.62.3"
+alias vps-android="ssh root@208.68.38.124"
+
+# alias redshift
+alias rshift="redshift -l 39.9:32.8 -t 5700:3600 -g 0.7 -m vidmode &"
+
+# android
+alias android-connect="mtpfs -o allow_other /media/GalaxyNexus"
+alias android-disconnect="fusermount -u /media/GalaxyNexus"
+
+# python
+alias bp="bpython"
+
+# vim
+alias vi="vim"
+
+# xclip
+alias x="xclip -selection c"
+
+# virtualenv
+alias activate=". ~/programming/python/.ENVS/ENV/bin/activate"
+alias d151=". ~/programming/python/.ENVS/django151/bin/activate && cd ~/programming/python/.ENVS/django151"
+alias bottle=". ~/programming/python/.ENVS/bottle/bin/activate && cd ~/programming/python/.ENVS/bottle/"
