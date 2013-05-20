@@ -1,0 +1,11 @@
+killall emacs
+killall emacs
+
+ps ax | egrep "emacs --daemon$" > /dev/null
+if [ $? == 0 ]
+then
+     emacsclient -c
+else
+        emacs --daemon
+        emacsclient -c
+fi

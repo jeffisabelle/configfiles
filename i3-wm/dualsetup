@@ -1,0 +1,13 @@
+xrandr | grep "VGA1 connected" > /dev/null
+
+if [ $? == 0 ]
+then
+    xrandr --output VGA1 --auto --left-of LVDS1
+    echo "VGA Dedected"
+    echo "Switching to Dual Monitor Mode"
+else
+    # do nothing start normally
+    xrandr > /dev/null
+    echo "VGA Couldn't Be Dedected"
+    echo "Switching to Single Monitor Mode"
+fi
