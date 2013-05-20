@@ -160,3 +160,4 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 
 # output to VGA
 workspace "1: www" output VGA1
+workspace "2: emacs" output LVDS1
