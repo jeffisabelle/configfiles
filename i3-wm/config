@@ -80,8 +80,8 @@ bindsym $mod+a focus parent
 # bindsym $mod+1 workspace 1
 # bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
+# bindsym $mod+4 workspace 4
+# bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -143,6 +143,9 @@ bar {
 # workspaces
 bindsym $mod+1 workspace 1: www
 bindsym $mod+2 workspace 2: emacs
+bindsym $mod+4 workspace 4: xchat
+bindsym $mod+5 workspace 5: desk
+bindsym $mod+Tab workspace 5: desk
 
 # assignments
 assign [class="^Firefox" instance="^Navigator"] 1: www
@@ -150,8 +153,10 @@ assign [class="^Firefox" instance="^Navigator"] 1: www
 # executions
 exec firefox
 exec --no-startup-id i3-msg 'workspace 1: www; exec dualsetup; workspace 1: www'
-exec --no-startup-id i3-msg 'workspace 2: emacs; exec startemacs; workspace 1: www'
-exec --no-startup-id i3-msg 'workspace 3; exec nm-applet; workspace 2'
+exec --no-startup-id i3-msg 'workspace 2: emacs; exec startemacs; workspace 2: www'
+exec --no-startup-id i3-msg 'workspace 2: emacs; exec nm-applet; workspace 2: emacs'
+exec --no-startup-id i3-msg 'workspace 4: xchat; exec xchat; workspace 4: xchat'
+exec --no-startup-id i3-msg 'workspace 5: desk; exec nautilus --no-desktop; workspace 5: desk'
 
 # sound settings
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
@@ -161,3 +166,5 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 # output to VGA
 workspace "1: www" output VGA1
 workspace "2: emacs" output LVDS1
+workspace "4: xchat" output LVDS1
+workspace "5: desk" output LVDS1
