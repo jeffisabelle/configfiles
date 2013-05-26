@@ -68,9 +68,9 @@ NOCOLOR="\[\033[00;00m\]"
 
 if [ "$color_prompt" = yes ]; then
     # PS1="$RED $(date +%H:%M) $YELLOW\w$CYAN$(__git_ps1 " (%s)")$NOCOLOR\$ "
-    PS1="$(date +%H:%M) \w $(__git_ps1 " (%s)") \$"
+    PS1="$(date +%H:%M) \w $(__git_ps1 " (%s)") \n \$"
 else
-    PS1="$RED $(date +%H:%M) $YELLOW\w$CYAN\$(__git_ps1 ' (%s)')$NOCOLOR \$ "
+    PS1="$RED $(date +%H:%M) $YELLOW\w$CYAN\$(__git_ps1 ' (%s)')$NOCOLOR \n \$ "
     # PS1="$YELLOW\w \$(__git_ps1 ' (%s)')\$ "
     # PS1="$RED \$(date +%H:%M) $YELLOW\w$NOCOLOR \$ "
     # PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w $(__git_ps1 " (%s)") \$ '
@@ -139,4 +139,3 @@ export TERM=xterm-256color
 
 # include aliases
 . ~/.aliases
-
