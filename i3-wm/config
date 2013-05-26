@@ -163,6 +163,9 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 # bindsym XF86AudioMute exec amixer -q set Master toggle
 
+bindsym XF86KbdBrightnessDown exec kbd-backlight down
+bindsym XF86KbdBrightnessUp exec kbd-backlight up
+
 # output to VGA
 workspace "1: www" output VGA1
 workspace "2: emacs" output LVDS1

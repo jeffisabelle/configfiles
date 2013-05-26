@@ -1,0 +1,9 @@
+if [ $1 == "up" ];
+then
+    echo 3 > /sys/devices/platform/asus-nb-wmi/leds/asus::kbd_backlight/brightness
+fi
+
+if [ $1 == "down" ];
+then
+    echo 0 > /sys/devices/platform/asus-nb-wmi/leds/asus::kbd_backlight/brightness
+fi
