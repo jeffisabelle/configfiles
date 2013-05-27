@@ -2,9 +2,16 @@ xrandr | grep "VGA1 connected" > /dev/null
 
 if [ $? == 0 ]
 then
-    xrandr --output VGA1 --auto --left-of LVDS1
-    echo "VGA Dedected"
-    echo "Switching to Dual Monitor Mode"
+    if [ "$1" == "mirror" ]
+    then
+        xrandr --output VGA1 --auto --same-as LVDS1
+        echo "VGA DEDECTED"
+        echo "Switching to Dual Monitor Mode (Mirror)"
+    else
+        xrandr --output VGA1 --auto --left-of LVDS1
+        echo "VGA Dedected"
+        echo "Switching to Dual Monitor Mode (Double)"
+    fi
 else
     # do nothing start normally
     xrandr > /dev/null
