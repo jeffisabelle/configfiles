@@ -143,9 +143,8 @@ bar {
 # workspaces
 bindsym $mod+1 workspace 1: www
 bindsym $mod+2 workspace 2: emacs
-bindsym $mod+4 workspace 4: xchat
-bindsym $mod+5 workspace 5: desk
-bindsym $mod+Tab workspace 5: desk
+bindsym $mod+4 workspace 4: desk
+bindsym $mod+5 workspace 5: xchat
 
 # assignments
 assign [class="^Firefox" instance="^Navigator"] 1: www
@@ -155,8 +154,9 @@ exec firefox
 exec --no-startup-id i3-msg 'workspace 1: www; exec dualsetup; workspace 1: www'
 exec --no-startup-id i3-msg 'workspace 2: emacs; exec startemacs; workspace 2: www'
 exec --no-startup-id i3-msg 'workspace 2: emacs; exec nm-applet; workspace 2: emacs'
-exec --no-startup-id i3-msg 'workspace 4: xchat; exec xchat; workspace 4: xchat'
-exec --no-startup-id i3-msg 'workspace 5: desk; exec nautilus --no-desktop; workspace 5: desk'
+exec --no-startup-id i3-msg 'workspace 4: desk; exec nautilus --no-desktop; workspace 4: desk'
+exec --no-startup-id i3-msg 'workspace 5: xchat; exec xchat; workspace 4: desk'
+
 
 # sound settings
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
