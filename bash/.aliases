@@ -23,6 +23,9 @@ alias bp="bpython"
 # vim
 alias vi="vim"
 
+# intellij
+alias intellij="/home/jeffisabelle/Downloads/idea-IC-129.451/bin/idea.sh &"
+
 # xclip
 alias x="xclip -selection c"
 
