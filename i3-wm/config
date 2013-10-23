@@ -148,6 +148,7 @@ bindsym $mod+5 workspace 5: xchat
 
 # assignments
 assign [class="^Firefox" instance="^Navigator"] 1: www
+assign [class="^emacs"] 2: emacs
 
 # executions
 exec firefox
