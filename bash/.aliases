@@ -1,5 +1,6 @@
+alias l4d2="cd ~/.local/share/Steam/SteamApps/common/Left\ 4\ Dead\ 2/ && vblank_mode=0 primusrun ./hl2_linux -game left4dead2 -steam"
 alias shank2="primusrun /home/jeffisabelle/games/Shank\ 2/bin/shank2-bin64"
-alias hon="primusrun /home/jeffisabelle/HoN/hon.sh"
+alias hon="/home/jeffisabelle/HoN/hon.sh"
 
 # alias for emacs
 alias ec="emacsclient -t"
@@ -9,6 +10,7 @@ alias ecc="emacsclient -c &"
 alias hosting="ssh -p 2222 korsanay@184.173.206.97"
 alias vps="ssh root@192.34.62.3"
 alias vps-android="ssh root@208.68.38.124"
+alias tunnel="ssh -D 5555 root@192.34.62.3"
 
 # alias redshift
 alias rshift="redshift -l 39.9:32.8 -t 5700:3600 -g 0.7 -m vidmode &"
