@@ -8,6 +8,14 @@ then
         echo "VGA DEDECTED"
         echo "Switching to Dual Monitor Mode (Mirror)"
     else
+        # cvt 1920x1080 60
+        # cvt 1920 1080
+        # xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
+        # xrandr --addmode VGA1 1920x1080_60.00
+        # xrandr --output VGA1 --mode 1920x1080_60.00 --rate 60 --left-of LVDS1
+        # xrandr --newmode "1920x60_60.00"    9.25  1920 1976 2160 2400  60 63 73 76 -hsync +vsync
+        # xrandr --addmode VGA1 1920x60_60.00
+        # xrandr --output VGA1 --mode 1920x60_60.00 --rate 60 --left-of LVDS1
         xrandr --output VGA1 --auto --left-of LVDS1
         echo "VGA Dedected"
         echo "Switching to Dual Monitor Mode (Double)"
