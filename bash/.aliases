@@ -7,10 +7,8 @@ alias ec="emacsclient -t"
 alias ecc="emacsclient -c &"
 
 # hosting & vps
-alias hosting="ssh -p 2222 korsanay@184.173.206.97"
-alias vps="ssh root@192.34.62.3"
-alias vps-android="ssh root@208.68.38.124"
-alias tunnel="ssh -D 5555 root@192.34.62.3"
+alias tunnel="ssh -D 5555 root@107.170.142.247"
+alias vps-viveka="ssh root@107.170.142.247"
 
 # alias redshift
 alias rshift="redshift -l 39.9:32.8 -t 5700:3600 -g 0.7 -m vidmode &"
@@ -35,4 +33,5 @@ alias x="xclip -selection c"
 alias activate=". ~/programming/python/.ENVS/ENV/bin/activate"
 alias d151=". ~/programming/python/.ENVS/django151/bin/activate && cd ~/programming/python/.ENVS/django151"
 alias bottle=". ~/programming/python/.ENVS/bottle/bin/activate && cd ~/programming/python/.ENVS/bottle/"
-alias flask=". ~/programming/python/.ENVS/flask/bin/activate && cd ~/programming/python/.ENVS/flask/"
+alias flask=". ~/programming/python/.ENVS/flask-env/bin/activate && cd ~/programming/python/.ENVS/flask-env/"
+alias django=". ~/programming/python/.ENVS/django-env/bin/activate && cd ~/programming/python/.ENVS/django-env/"
