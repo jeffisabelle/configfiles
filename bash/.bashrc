@@ -132,7 +132,7 @@ fi
 export ALTERNATE_EDITOR=""
 
 # fortune and cowsay
-/usr/games/fortune -a -s | cowsay -f default.cow
+/usr/local/bin/fortune -a -s | cowsay -f default.cow
 
 # terminal color
 export TERM=xterm-256color
